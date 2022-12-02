@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="paginas.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <title>Formulieren</title>
+</head>
+<body>
+
+<nav>
+
+<!-- menu (list - divs) -->
+  <div class="container">
+  <div class="navigation">
+  <ul>
+  <li class="list">
+  <a href="/landing page.html">
+  <span class="icon"><ion-icon name="egg-outline"></ion-icon></span>
+  <span class="title">Vini Mini</span>
+  </a>
+  </li>
+  
+    
+  <!--Vini Mini -->
+  <li class="list">
+  <a href="/Vini Mini.html">
+  <span class="icon">
+  <ion-icon name="egg-outline"></ion-icon>
+  </span>
+  <span class="title">Vini Mini</span>
+  </a>
+  </li>
+  
+  <!-- Logo -->
+  <li class="list">
+  <a href="/logo.html">
+  <span class="icon"><ion-icon name="egg-outline"></ion-icon></span>
+  <span class="title">Logo</span>
+  </a>
+  </li>
+  
+  
+  <!-- Formulieren -->
+  <li class="list">
+  <a href="/formulieren.html">
+  <span class="icon"><ion-icon name="folder-outline"></ion-icon></span>
+  <span class="title">Formulieren</span>
+  </a>
+  </li>
+  
+  <!-- Foto's en video's -->
+  <li class="list">
+  <a href="/foto's.html">
+  <span class="icon">  <ion-icon name="videocam-outline"></ion-icon></span>
+  <span class="title">Foto's en video's</span>
+  </a>
+  </li>
+  
+  <!-- Iconen -->
+  <li class="list">
+  <a href="iconen.html">
+  <span class="icon"><ion-icon name="cube-outline"></ion-icon></span>
+  <span class="title">Iconen</span>
+  </a>
+  </li>
+  
+  <!-- Reclame -->
+  <li class="list">
+  <a href="reclame.html">
+  <span class="icon"><ion-icon name="pricetag-outline"></ion-icon></span>
+  <span class="title">Reclame</span>
+  </a>
+  </li>
+  
+  <!-- Interactieve componenten --> 
+  <li class="list">
+  <a href="/interactieve-componenten.html">
+  <span class="icon"><ion-icon name="caret-forward-circle-outline"></ion-icon></span>
+  <span class="title">Interactieve componenten</span>
+  </a>
+  </li>
+  
+  <!-- Derde partij -->
+  <li class="list">
+  <a href="/derde-partij.html">
+  <span class="icon"><ion-icon name="people-outline"></ion-icon></span>
+  <span class="title">Derde partij</span>
+  </a>
+  </li>
+  
+  <!-- Headings en teksten -->
+  <li class="list">
+  <a href="headings.html">
+  <span class="icon"><ion-icon name="filter-outline"></ion-icon></span>
+  <span class="title"> Headings en teksten</span>
+  </a>
+  </li>
+  
+  <!-- Buttons -->
+  <li class="list">
+    <a href="buttons.html">
+    <span class="icon"><ion-icon name="radio-button-on-outline"></ion-icon></span>
+    <span class="title">Buttons</span>
+    </a>
+    </li>  
+  
+  <!-- Kleuren -->
+  <li class="list">
+  <a href="./kleur.html">
+  <span class="icon"><ion-icon name="color-palette-outline"></ion-icon></span>
+  <span class="title">Kleuren</span>
+  </a>
+  </li>
+  
+  <!-- Lijsten -->
+  <li class="list">
+  <a href="/lijsten.html">
+  <span class="icon"><ion-icon name="list-outline"></ion-icon></span>
+  <span class="title">Lijsten</span>
+  </a>
+  </li>
+  
+  <!-- Navigatie -->
+  <li class="list">
+  <a href="/navigatie.html">
+  <span class="icon"><ion-icon name="navigate-circle-outline"></ion-icon></span>
+  <span class="title">Navigatie</span>
+  </a>
+  </li>
+  
+
+  </ul> 
+  </div>
+  </div>
+<!-- menu (list - divs) --> 
+
+  <!-- Javascript  -->
+  <!-- Installation icon -->
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <!-- Installation icon -->
+  <!-- Javascript  -->
+
+  <script>
+
+  // MenuToggle
+  let toggle = document.querySelector('.toggle');
+  let navigation = document.querySelector('.navigation');
+  let main = document.querySelector('.main');
+  toggle.onclick = function () {
+  navigation.classList.toggle('active');
+  main.classList.toggle('active');
+  }
+
+  // add hovered class in selected list item
+  let list = document.querySelectorAll('.navigation li');
+  function activelink() {
+  list.forEach((item) => item.classList.remove('hovered'));
+  this.classList.add("hovered");
+  }
+  list.forEach((item) => item.addEventListener('mouseover', activelink));
+
+  </script>
+
+</nav>
+
+<main>
+
+<img src="./img/patroon.png" alt="patroon" class="img-patroon"></img>
+
+
+<!-- Hier komt je tekst in-->
+<!-- Title H1 -->
+<h1>Formulieren</h1>
+
+<!-- Broodtekst -->
+<p>Formulieren zijn erg belangrijk op de website, je moet namelijk een eigen Mini aan kunnen maken. Teveneens ook een account. Zonder formulieren gaat dit niet.</p>
+<!-- Kop tekst -->
+<h2>Checkbox:</h2>
+<img src="./img/form1.png" alt="checkbox formulier" class="logo-img-1"></img>
+<!-- Lijst -->
+<ul>
+
+<li>Om een checkbox te kunnen maken, begin je simpelweg gewoon met een input zoals bij alle formulieren.</li>
+<li>Normaal gesproken zou je dan type="tekst" invoeren. Maar in dit geval type je <strong><i>type="checkbox".</i></strong> Hierdoor kan je vakjes aanvinken zoals op bovenstaande foto.</li>
+<li>Wil je meerdere checkboxen, maak je simepwelg meer inputs.</li>
+
+</ul>
+
+<h2>Account aanmaken</h2>
+<img src="./img/form3.png" alt="account aanmaken formulier" class="logo-img-1"></img>
+
+<ul>
+
+<li>Op bovenstaande foto zie je een formulier, waarmee je een account aan kan maken.</li>
+<li>Dit is erg belangrijk op de website, hierdoor kan je inloggen en krijg je toegang tot je persoonlijke dagboek.</li>
+<li>Het maken hiervan is heel simpel, je werkt weer met een input. In dit geval <strong><i>input type="tekst"</i></strong></li>
+<li>Deze geef je ook allemaal een aparte naam, dit doe je met een <strong><i>placeholder.</i></strong></li>
+
+</ul>
+
+<h2>Input text:</h2>
+<img src="./img/form2.png" alt="account aanmaken formulier" class="logo-img-1"></img>
+
+<ul>
+
+<li>Dit is een erg simpele invoerveld, je hoeft maar 1x een input met een placeholder te gebruiken.</li>
+<li>Vervolgens maak je eigen aanpassingen in css naar keuze. Dit om er een style aan te geven.</li>
+
+</ul>
+
+<h2>Don'ts:</h2>
+
+<ul>
+<li>Gebruik geen andere invoervelden(labels) bij het aanmaken van een account buiten Naam, achternaam, datum en opmerkingen.</li>
+</ul>
+
+
+</main>
+
+
+
+</body>
+</html>

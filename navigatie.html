@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="paginas.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+
+<nav>
+
+<!-- menu (list - divs) -->
+  <div class="container">
+  <div class="navigation">
+  <ul>
+  <li class="list">
+  <a href="/landing page.html">
+  <span class="icon"><ion-icon name="egg-outline"></ion-icon></span>
+  <span class="title">Vini Mini</span>
+  </a>
+  </li>
+  
+    
+  <!--Vini Mini -->
+  <li class="list">
+  <a href="/Vini Mini.html">
+  <span class="icon">
+  <ion-icon name="egg-outline"></ion-icon>
+  </span>
+  <span class="title">Vini Mini</span>
+  </a>
+  </li>
+  
+  <!-- Logo -->
+  <li class="list">
+  <a href="/logo.html">
+  <span class="icon"><ion-icon name="egg-outline"></ion-icon></span>
+  <span class="title">Logo</span>
+  </a>
+  </li>
+  
+  
+  <!-- Formulieren -->
+  <li class="list">
+  <a href="/formulieren.html">
+  <span class="icon"><ion-icon name="folder-outline"></ion-icon></span>
+  <span class="title">Formulieren</span>
+  </a>
+  </li>
+  
+  <!-- Foto's en video's -->
+  <li class="list">
+  <a href="/foto's.html">
+  <span class="icon">  <ion-icon name="videocam-outline"></ion-icon></span>
+  <span class="title">Foto's en video's</span>
+  </a>
+  </li>
+  
+  <!-- Iconen -->
+  <li class="list">
+  <a href="iconen.html">
+  <span class="icon"><ion-icon name="cube-outline"></ion-icon></span>
+  <span class="title">Iconen</span>
+  </a>
+  </li>
+  
+  <!-- Reclame -->
+  <li class="list">
+  <a href="reclame.html">
+  <span class="icon"><ion-icon name="pricetag-outline"></ion-icon></span>
+  <span class="title">Reclame</span>
+  </a>
+  </li>
+  
+  <!-- Interactieve componenten --> 
+  <li class="list">
+  <a href="/interactieve-componenten.html">
+  <span class="icon"><ion-icon name="caret-forward-circle-outline"></ion-icon></span>
+  <span class="title">Interactieve componenten</span>
+  </a>
+  </li>
+  
+  <!-- Derde partij -->
+  <li class="list">
+  <a href="/derde-partij.html">
+  <span class="icon"><ion-icon name="people-outline"></ion-icon></span>
+  <span class="title">Derde partij</span>
+  </a>
+  </li>
+  
+  <!-- Headings en teksten -->
+  <li class="list">
+  <a href="headings.html">
+  <span class="icon"><ion-icon name="filter-outline"></ion-icon></span>
+  <span class="title"> Headings en teksten</span>
+  </a>
+  </li>
+  
+  <!-- Buttons -->
+  <li class="list">
+    <a href="buttons.html">
+    <span class="icon"><ion-icon name="radio-button-on-outline"></ion-icon></span>
+    <span class="title">Buttons</span>
+    </a>
+    </li>  
+  
+  <!-- Kleuren -->
+  <li class="list">
+  <a href="./kleur.html">
+  <span class="icon"><ion-icon name="color-palette-outline"></ion-icon></span>
+  <span class="title">Kleuren</span>
+  </a>
+  </li>
+  
+  <!-- Lijsten -->
+  <li class="list">
+  <a href="/lijsten.html">
+  <span class="icon"><ion-icon name="list-outline"></ion-icon></span>
+  <span class="title">Lijsten</span>
+  </a>
+  </li>
+  
+  <!-- Navigatie -->
+  <li class="list">
+  <a href="/navigatie.html">
+  <span class="icon"><ion-icon name="navigate-circle-outline"></ion-icon></span>
+  <span class="title">Navigatie</span>
+  </a>
+  </li>
+  
+
+  </ul> 
+  </div>
+  </div>
+<!-- menu (list - divs) --> 
+
+  <!-- Javascript  -->
+  <!-- Installation icon -->
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <!-- Installation icon -->
+  <!-- Javascript  -->
+
+  <script>
+
+  // MenuToggle
+  let toggle = document.querySelector('.toggle');
+  let navigation = document.querySelector('.navigation');
+  let main = document.querySelector('.main');
+  toggle.onclick = function () {
+  navigation.classList.toggle('active');
+  main.classList.toggle('active');
+  }
+
+  // add hovered class in selected list item
+  let list = document.querySelectorAll('.navigation li');
+  function activelink() {
+  list.forEach((item) => item.classList.remove('hovered'));
+  this.classList.add("hovered");
+  }
+  list.forEach((item) => item.addEventListener('mouseover', activelink));
+
+  </script>
+
+</nav>
+<main>
+  
+<img src="./img/patroon.png" alt="patroon" class="img-patroon"></img>
+
+<h1>Navigatie</h1>
+
+<p>Formulieren zijn erg belangrijk op de website, je moet namelijk een eigen Mini aan kunnen maken. Teveneens ook een account. Zonder formulieren gaat dit niet.</p>
+
+<h2>Navigatie:</h2>
+
+ <div class="nav-menu">
+        <div class="nav-links">
+            <!--Lijst-->
+            <ul>
+                 <li> <a href="">Voor Mini v</a></li>
+                 <li> <a href="">Producten v</a></li>
+                 <li> <a href="">Over ons v</a></li>
+                 <li> <a href="">Nieuws v</a></li>
+                 <li> <a href="">Contact v</a></li>
+                 <li> <a href="">Zoeken v</a></li>
+            </ul>
+        </div>
+    </div>
+
+<ul>
+<br><li>Het menu bestaat uit een unordered list met daar in ordered lists. Er wordt ook gespeeld met <strong><em>margins, widths en paddings.</em></strong></li>
+</ul>
+
+<img src="img/Navigatie.png" alt="bar" class="navigatie-logo"></img>
+
+<!--Doel-->
+<li>Het doel van de navigatiebalk is om onze doelgroep te helpen moeiteloos door de Vini Mini website te bladeren. De navigatiebalk licht helemaal bovenaan op alle paginas in de website.</li>
+
+<!--Navigatiebalk-->
+<h2>Hoe word de navigatiebalk gebruikt?</h2>
+
+<li>De Navigatiebalk bestaat uit Voor Mini, Producten, Over Ons, Nieuws en Contact. Elke balk/button verwijst naar een specifieke
+    pagina. Voor Mini verwijst naar de routekaart en schema's.
+    Ook kan je via "Voor Mini" naar de test worden gestuurd. Bij "Producten" kunt u naar de producten (startkit/opvolgkit)
+    van Vini Mini bekijken. "Over Ons" is waar u de verhaal van Vini Mini kunt lezen.
+    Nieuws verwijst naar blogs, nieuwsbrief en media van Vini Mini. Contact is waar je contact kunt opnemen met Vini Mini
+    (telefonisch) en of vragen kunt stellen via mail.
+</li>
+
+<!--Screenshot menu balk-->
+<img src="img/Navbar.png" alt="bar" class="logo-img-1"></img>
+   
+</main>
+</body>
+</html>

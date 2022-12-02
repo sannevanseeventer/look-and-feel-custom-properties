@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="paginas.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <title>Interactieve-componenten</title>
+</head>
+
+
+<body>
+<nav>
+
+<!-- menu (list - divs) -->
+  <div class="container">
+  <div class="navigation">
+  <ul>
+  <li class="list">
+  <a href="/landing page.html">
+  <span class="icon"><ion-icon name="egg-outline"></ion-icon></span>
+  <span class="title">Vini Mini</span>
+  </a>
+  </li>
+  
+    
+  <!--Vini Mini -->
+  <li class="list">
+  <a href="/Vini Mini.html">
+  <span class="icon">
+  <ion-icon name="egg-outline"></ion-icon>
+  </span>
+  <span class="title">Vini Mini</span>
+  </a>
+  </li>
+  
+  <!-- Logo -->
+  <li class="list">
+  <a href="/logo.html">
+  <span class="icon"><ion-icon name="egg-outline"></ion-icon></span>
+  <span class="title">Logo</span>
+  </a>
+  </li>
+  
+  
+  <!-- Formulieren -->
+  <li class="list">
+  <a href="/formulieren.html">
+  <span class="icon"><ion-icon name="folder-outline"></ion-icon></span>
+  <span class="title">Formulieren</span>
+  </a>
+  </li>
+  
+  <!-- Foto's en video's -->
+  <li class="list">
+  <a href="/foto's.html">
+  <span class="icon">  <ion-icon name="videocam-outline"></ion-icon></span>
+  <span class="title">Foto's en video's</span>
+  </a>
+  </li>
+  
+  <!-- Iconen -->
+  <li class="list">
+  <a href="iconen.html">
+  <span class="icon"><ion-icon name="cube-outline"></ion-icon></span>
+  <span class="title">Iconen</span>
+  </a>
+  </li>
+  
+  <!-- Reclame -->
+  <li class="list">
+  <a href="reclame.html">
+  <span class="icon"><ion-icon name="pricetag-outline"></ion-icon></span>
+  <span class="title">Reclame</span>
+  </a>
+  </li>
+  
+  <!-- Interactieve componenten --> 
+  <li class="list">
+  <a href="/interactieve-componenten.html">
+  <span class="icon"><ion-icon name="caret-forward-circle-outline"></ion-icon></span>
+  <span class="title">Interactieve componenten</span>
+  </a>
+  </li>
+  
+  <!-- Derde partij -->
+  <li class="list">
+  <a href="/derde-partij.html">
+  <span class="icon"><ion-icon name="people-outline"></ion-icon></span>
+  <span class="title">Derde partij</span>
+  </a>
+  </li>
+  
+  <!-- Headings en teksten -->
+  <li class="list">
+  <a href="headings.html">
+  <span class="icon"><ion-icon name="filter-outline"></ion-icon></span>
+  <span class="title"> Headings en teksten</span>
+  </a>
+  </li>
+  
+  <!-- Buttons -->
+  <li class="list">
+    <a href="buttons.html">
+    <span class="icon"><ion-icon name="radio-button-on-outline"></ion-icon></span>
+    <span class="title">Buttons</span>
+    </a>
+    </li>  
+  
+  <!-- Kleuren -->
+  <li class="list">
+  <a href="./kleur.html">
+  <span class="icon"><ion-icon name="color-palette-outline"></ion-icon></span>
+  <span class="title">Kleuren</span>
+  </a>
+  </li>
+  
+  <!-- Lijsten -->
+  <li class="list">
+  <a href="/lijsten.html">
+  <span class="icon"><ion-icon name="list-outline"></ion-icon></span>
+  <span class="title">Lijsten</span>
+  </a>
+  </li>
+  
+  <!-- Navigatie -->
+  <li class="list">
+  <a href="/navigatie.html">
+  <span class="icon"><ion-icon name="navigate-circle-outline"></ion-icon></span>
+  <span class="title">Navigatie</span>
+  </a>
+  </li>
+  
+
+  </ul> 
+  </div>
+  </div>
+<!-- menu (list - divs) --> 
+
+  <!-- Javascript  -->
+  <!-- Installation icon -->
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <!-- Installation icon -->
+  <!-- Javascript  -->
+
+  <script>
+
+  // MenuToggle
+  let toggle = document.querySelector('.toggle');
+  let navigation = document.querySelector('.navigation');
+  let main = document.querySelector('.main');
+  toggle.onclick = function () {
+  navigation.classList.toggle('active');
+  main.classList.toggle('active');
+  }
+
+  // add hovered class in selected list item
+  let list = document.querySelectorAll('.navigation li');
+  function activelink() {
+  list.forEach((item) => item.classList.remove('hovered'));
+  this.classList.add("hovered");
+  }
+  list.forEach((item) => item.addEventListener('mouseover', activelink));
+
+  </script>
+
+</nav>
+
+<main>
+
+<img src="./img/patroon.png" alt="patroon" class="img-patroon"></img>
+
+
+<!-- Hier komt je tekst in-->
+<!-- Title H1 -->
+<h1>Interactieve componenten</h1>
+
+<!-- Broodtekst -->
+<p>
+Onder interactieve video verstaan we het toevoegen van interactieve elementen, zoals knoppen, links, QR codes, buttons en/of formulieren tijdens of na een video. Hierin wordt onderscheid gemaakt tussen interactie binnen de video en interactie die linkt naar een externe bron.</p>
+
+<!-- Kop tekst -->
+<h2>Vragenlijsten:</h2>
+
+<!-- Lijst -->
+<ul>
+
+<li>Het logo is terug te vinden links bovenin bij de vragenlijsten</li>
+<li>De vragenlijsten bevatten een gele button zoals hieronder is afgebeeld</li>
+<img src="./img/vragenlijst-voorbeeld.png" alt="Voorbeeld vragenlijst" class="logo-img-1"></img>
+
+<li>De achtergrond van de vragenlijst bevat een zandkleur of de groene kleur</Li>
+<img src="./img/zandkleur.png" alt="zandkleur" class="logo-img-1"></img>
+<img src="./img/groenekleur.png" alt="groene kleur" class="logo-img-1"></img>
+
+<li>De vragenlijsten worden opgezet met een logo, cijfer voor de vraag met een pijltje erachter, de vraag, met daaronder het invoerveld en de oke-button.</li>
+<li>De invoervelden zijn bij een zandkleurige achtergrond groen, en bij een groenkleurige achtergrond geel. Dit invoerveld heeft een streep onder het ingevulde antwoord in dezelfde kleur als de tekst.</li>
+
+<img src="./img/invoerveld.png" alt="Voorbeeld invoerveld" class="logo-img-1"></img>
+<img src="./img/invoerveldzandkleur2.png" alt="Voorbeeld invoerveld zandkleur" class="logo-img-1"></img>
+
+</ul>
+
+<h2>Bestellen:</h2>
+<li>Bij een advertentie wordt de volgende opzet gebruikt:</li>
+<img src="./img/opzetadvertentie.png" alt="opzet advertentie" class="logo-img-1"></img>
+
+<li>Hier staat de foto links, met kleine/meerdere foto's eronder. Rechts van de foto staat meer informatie over het product.</li>
+<li>De titel van het product is een <strong><em>H1</em></strong></li>
+<li>De prijs is een span met de grootte van <strong><em>28px</em></strong> en in het font <strong><em>Montserrat</em></strong>. De kleur van de prijs is: <strong><em>#152a45</em></strong></li>
+<li>Hieronder is de "toevoegen aan winkelwagen"-button altijd wit met een <strong><em>border van 1 pixel solid in de (groene)kleur #72afa6</em></strong>. De text is <strong><em>uppercase</em></strong> en heeft een <strong><em>padding</em></strong> eromheen van <strong><em>15px, 30px</em></strong></li>
+<li>De "nu kopen" button ernaast is groen van kleur en heeft geen button. De text is <strong><em>uppercase</em></strong>, in een grootte van <srtong><em>12 pixels</em></strong> met een <strong><em>padding van 15px, 30px</em></strong>. De kleur van de teskt is wit met deze hex code: <strong><em>#FFFFFF</em></strong></li>
+
+<h2>Carrousel:</h2>
+<li>Ook is er op de website een carrousel te vinden met wat medische experts zeggen. Dit ziet er zo uit:</li>
+<img src="./img/watmedischeexpertszeggen.png" alt="wat medische experts zeggen" class="logo-img-1"></img>
+
+<li>Deze carrousel is opgebouwd uit een titel "wat medische experts zeggen". Deze titel is een <strong><em>H3</em></strong></li>
+<li>Onder de titel staat een quote. Deze quote is een <strong><em>p</em></strong>.</li>
+<img src="./img/quote.png" alt="quote van medische expert" class="logo-img-1"></img>
+
+<li>Dan komt er een foto met een <strong><em>width en height van 60px met een border radius van 100%.</em></strong></li>
+
+<li>Onder de foto staat meer informatie over de expert. Dit is weergegeven in een gele kleur: <strong><em>#f4eb34</em></strong>. Deze informatie is in het <strong><em>font "Montserrat" </em></strong>geschreven met een <strong><em>uppercase en een letterspacing van 1px</em></strong>. <strong><em>De font-style is normal, maar de font-weight is 700.</em></strong></li>
+<img src="./img/infooverexpert.png" alt="informatie over expert" class="logo-img-1"></img>
+
+<li>Hieronder staat nog een plaats waar de expert actief is. Dit is een <strong><em>p</em></strong></li>
+<img src="./img/informatieplaats.png" alt="informatie over plaats van expert" class="logo-img-1"></img>
+
+
+
+
+</ul>
+
+<h2>Don'ts:</h2>
+
+<ul>
+<li>Het logo mag nooit op een andere plek staan bij een vragenlijst dan links bovenin.</li>
+<li>De vragenlijsten mogen nooit een andere kleur button gebruiken dan geel.</li>
+<li>De achtergrond kleur van de vragenlijsten mogen nooit een andere kleur hebben dan groen of de zandkleur.</li>
+<li>De vragenlijst mag nooit een andere opzet hebben als de standaard.</li>
+<li>De streep onder het invoerveld mag nooit een andere kleur hebben als de tekst in het invoerveld</li>
+<li>De afbeelding van de bestelpagina mag nooit rechts geplaatst worden</li>
+<li>De informatie over het product mag nooit links worden geplaatst van de pagina</li>
+<li>De buttons van de bestelpagina mogen nooit een andere kleur en lettertype bevatten als hierboven is aangegeven</li>
+<li>De carrousel mag nooit anders worden opgebouwd als hierboven is beschreven.</li>
+</ul>
+
+</main>
+
+</body>
+
+
+
+</html>
+

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="paginas.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <title>Lijsten</title>
+</head>
+
+
+<body>
+
+<nav>
+
+<!-- menu (list - divs) -->
+  <div class="container">
+  <div class="navigation">
+  <ul>
+  <li class="list">
+  <a href="/landing page.html">
+  <span class="icon"><ion-icon name="egg-outline"></ion-icon></span>
+  <span class="title">Vini Mini</span>
+  </a>
+  </li>
+  
+    
+  <!--Vini Mini -->
+  <li class="list">
+  <a href="/Vini Mini.html">
+  <span class="icon">
+  <ion-icon name="egg-outline"></ion-icon>
+  </span>
+  <span class="title">Vini Mini</span>
+  </a>
+  </li>
+  
+  <!-- Logo -->
+  <li class="list">
+  <a href="/logo.html">
+  <span class="icon"><ion-icon name="egg-outline"></ion-icon></span>
+  <span class="title">Logo</span>
+  </a>
+  </li>
+  
+  
+  <!-- Formulieren -->
+  <li class="list">
+  <a href="/formulieren.html">
+  <span class="icon"><ion-icon name="folder-outline"></ion-icon></span>
+  <span class="title">Formulieren</span>
+  </a>
+  </li>
+  
+  <!-- Foto's en video's -->
+  <li class="list">
+  <a href="/foto's.html">
+  <span class="icon">  <ion-icon name="videocam-outline"></ion-icon></span>
+  <span class="title">Foto's en video's</span>
+  </a>
+  </li>
+  
+  <!-- Iconen -->
+  <li class="list">
+  <a href="iconen.html">
+  <span class="icon"><ion-icon name="cube-outline"></ion-icon></span>
+  <span class="title">Iconen</span>
+  </a>
+  </li>
+  
+  <!-- Reclame -->
+  <li class="list">
+  <a href="reclame.html">
+  <span class="icon"><ion-icon name="pricetag-outline"></ion-icon></span>
+  <span class="title">Reclame</span>
+  </a>
+  </li>
+  
+  <!-- Interactieve componenten --> 
+  <li class="list">
+  <a href="/interactieve-componenten.html">
+  <span class="icon"><ion-icon name="caret-forward-circle-outline"></ion-icon></span>
+  <span class="title">Interactieve componenten</span>
+  </a>
+  </li>
+  
+  <!-- Derde partij -->
+  <li class="list">
+  <a href="/derde-partij.html">
+  <span class="icon"><ion-icon name="people-outline"></ion-icon></span>
+  <span class="title">Derde partij</span>
+  </a>
+  </li>
+  
+  <!-- Headings en teksten -->
+  <li class="list">
+  <a href="headings.html">
+  <span class="icon"><ion-icon name="filter-outline"></ion-icon></span>
+  <span class="title"> Headings en teksten</span>
+  </a>
+  </li>
+  
+  <!-- Buttons -->
+  <li class="list">
+    <a href="buttons.html">
+    <span class="icon"><ion-icon name="radio-button-on-outline"></ion-icon></span>
+    <span class="title">Buttons</span>
+    </a>
+    </li>  
+  
+  <!-- Kleuren -->
+  <li class="list">
+  <a href="./kleur.html">
+  <span class="icon"><ion-icon name="color-palette-outline"></ion-icon></span>
+  <span class="title">Kleuren</span>
+  </a>
+  </li>
+  
+  <!-- Lijsten -->
+  <li class="list">
+  <a href="/lijsten.html">
+  <span class="icon"><ion-icon name="list-outline"></ion-icon></span>
+  <span class="title">Lijsten</span>
+  </a>
+  </li>
+  
+  <!-- Navigatie -->
+  <li class="list">
+  <a href="/navigatie.html">
+  <span class="icon"><ion-icon name="navigate-circle-outline"></ion-icon></span>
+  <span class="title">Navigatie</span>
+  </a>
+  </li>
+  
+
+  </ul> 
+  </div>
+  </div>
+<!-- menu (list - divs) --> 
+
+  <!-- Javascript  -->
+  <!-- Installation icon -->
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <!-- Installation icon -->
+  <!-- Javascript  -->
+
+  <script>
+
+  // MenuToggle
+  let toggle = document.querySelector('.toggle');
+  let navigation = document.querySelector('.navigation');
+  let main = document.querySelector('.main');
+  toggle.onclick = function () {
+  navigation.classList.toggle('active');
+  main.classList.toggle('active');
+  }
+
+  // add hovered class in selected list item
+  let list = document.querySelectorAll('.navigation li');
+  function activelink() {
+  list.forEach((item) => item.classList.remove('hovered'));
+  this.classList.add("hovered");
+  }
+  list.forEach((item) => item.addEventListener('mouseover', activelink));
+
+  </script>
+
+</nav>
+<main>
+
+<img src="./img/patroon.png" alt="patroon" class="img-patroon"></img>
+
+
+<!-- Hier komt je tekst in-->
+<!-- Title H1 -->
+<h1>Lijsten</h1>
+
+<!-- Broodtekst -->
+<p>Hoe de lijsten op de website worden getoond bepaald voor een deel hoe overzichtelijk het is voor gebruikers om te lezen en om te bekijken.</p>
+
+<!-- Kop tekst -->
+<h2>Lijsten op de website:</h2>
+
+<!-- Lijst -->
+<ul>
+
+<li>Op de website wordt er veel gebruik gemaakt van genummerde lijsten om bijvoorbeeld stappen aan te geven</Li>
+<li>Op bepaalde plekken worden ook bullet points gebruikt namelijk in de webshop waarin ze namelijk uitleggen wat ze bieden.</Li>
+<li>Ook zijn er lijsten die geen bullet points hebben bijvoorbeeld de lijsten in Agenda waar allemaal verschillende reminders in de lijst staan.</li>
+
+
+</ul>
+
+
+<img src="./img/agenda-lijst.png" alt="logo-kleuren" class="logo-img-1"></img>
+<img src="./img/lijst-vini.png" alt="logo-kleuren" class="logo-img-1"></img>
+
+<h2>Toepassen van de lijsten:</h2>
+
+<!-- Lijst -->
+<ul>
+
+<li>Het toepassen van de lijsten word gedaan door een <strong><i>li element</i></strong> te maken en daarin meerdere <strong><i>unorderd or orderd list items</i></strong> te plaatsen, vervolgens worden in <strong><i>de ol/ul elementen</i></strong> de teksten geplaatst om de lijst compleet te maken. </Li>
+
+</ul>
+
+<h2>Don'ts:</h2>
+
+<ul>
+<li>De lijsten mogen nooit op een andere manier in de code worden geplaatst dan door een li-element met daarin meerdere unordered en ordered lists items te plaatsen.</li>
+</ul>
+
+</main>
+</body>
+
+
+
+</html>
+
