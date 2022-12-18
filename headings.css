@@ -15,6 +15,8 @@
   --back1: #222;
   --black2: #999;
   --card: #D5EDEE;
+  --margin: -15px;
+
 }
 
 body {
@@ -35,13 +37,10 @@ body {
 /* TEKST */
 
 h1 {
-  font-family: 'Montserrat', sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 2em;
   color: var(--pinda);
   display: block;
-  font-size: 2em;
   text-align: center;
   margin-top: -15%;
   margin-right: 22%;
@@ -50,39 +49,35 @@ h1 {
 h2 {
   color: var(--pinda);
   font-size: 2em;
-  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  margin-left: -15px;
+  margin-left: var(--margin);
   margin-top: 2em;
 }
 
 h3 {
-  font-family: 'Montserrat', sans-serif;
   font-size: 1.4em;
   font-weight: 600;
-  margin-left: -15px;
-  margin-top: 33px;
+  margin-left: var(--margin);
+  margin-top: 2em;
   color: var(--back1);
   margin-bottom: 0.5em;
 
 }
 
 h4 {
-  font-family: 'Montserrat', sans-serif;
   font-size: 1.2em;
   font-weight: 400;
-  margin-left: -15px;
+  margin-left: var(--margin);
   color: var(--back1);
   margin-bottom: 0.5em;
 
 }
 
 h5 {
-  font-family: 'Montserrat', sans-serif;
   font-size: 1em;
   margin-top: 2em;
   font-weight: 700;
-  margin-left: -15px;
+  margin-left: var(--margin);
   color: var(--pinda);
 
 }
@@ -91,8 +86,7 @@ h5 {
 
 p {
   font-size: 1em;
-  font-family: 'Montserrat', sans-serif;
-  margin-left: -15px;
+  margin-left: var(--margin);
   margin-right: 10%;
   text-align: left;
   color: var(--black1);
@@ -109,21 +103,21 @@ p {
 
 .navigation {
   position: fixed;
-  width: 340px;
+  width: 21em;
   height: 100%;
   background: var(--pinda);
-  border-left: 10px solid var(--pinda);
+  border-left: 0.6em solid var(--pinda);
   transition: 0.5s;
   overflow: hidden;
 }
 
 .navigation.active {
-  width: 80px;
+  width: 5em;
 }
 
 .navigation ul {
   position: absolute;
-  top: -73px;
+  top: -4.6em;
   left: 0;
   width: 100%;
 }
@@ -132,8 +126,8 @@ p {
   position: relative;
   width: 100%;
   list-style: none;
-  border-top-left-radius: 30px;
-  border-bottom-left-radius: 30px;
+  border-top-left-radius: 1.9em;
+  border-bottom-left-radius: 1.9em;
 }
 
 .navigation ul li:hover,
@@ -142,13 +136,12 @@ p {
 }
 
 .navigation ul li:nth-child(1) {
-  margin-bottom: 40px;
+  margin-bottom: 2.5em;
   pointer-events: none;
 }
 
 .navigation ul li a {
   position: relative;
-  display: block;
   width: 100%;
   display: flex;
   text-decoration: none;
@@ -163,8 +156,8 @@ p {
 .navigation ul li a .icon {
   position: relative;
   display: block;
-  min-width: 60px;
-  height: 60px;
+  min-width: 3.75em;
+  height: 3.75em;
   line-height: 70px;
   text-align: center;
 }
@@ -176,9 +169,9 @@ p {
 .navigation ul li a .title {
   position: relative;
   display: block;
-  padding: 0 10px;
-  height: 60px;
-  line-height: 60px;
+  padding: 0 0.6em;
+  height: 3.75em;
+  line-height: 3.75em;
   text-align: start;
   white-space: nowrap;
 }
@@ -189,16 +182,14 @@ p {
   width: 50%;
   margin-top: -4em;
   margin-left: 40em;
-
 }
+
+/* RESPONSIVE*/
 
 @media only screen and (max-width: 1190px) {
 
   .navigation {
-    width: 80px;
-  }
-
-  .toggle {
-    display: none;
+    width: 5em;
   }
 }
+
